@@ -1,7 +1,4 @@
-import { Restaurante } from '../../pages/Perfil'
 import { Categoria, Imagem, Tag, Titulo } from './styles'
-
-import bannerImg from '../../assets/images/dolcePerfil.png'
 
 type Props = {
   titulo: string
