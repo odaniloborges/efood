@@ -11,6 +11,7 @@ export const Card = styled(Link)`
 
   .container {
     padding: 8px;
+    border: 1px solid ${cores.vermelho};
   }
 
   > img {

@@ -63,7 +63,7 @@ const Perfil = () => {
       <HeaderPerfil />
       <Banner
         titulo={restaurante.titulo}
-        infos={getRestauranteTags(restaurante)}
+        tipo={restaurante.tipo}
         imagem={restaurante.capa}
       />
       <div className="container">

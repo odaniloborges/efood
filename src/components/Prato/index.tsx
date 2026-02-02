@@ -30,6 +30,14 @@ const Prato = ({ titulo, descricao, imagem, porcao, preco }: Props) => {
     })
   }
 
+  const formatarPreco = (valor?: number) => {
+    if (!valor) return '0,00'
+    return valor.toLocaleString('pt-BR', {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2
+    })
+  }
+
   return (
     <>
       <Card>
@@ -65,7 +73,7 @@ const Prato = ({ titulo, descricao, imagem, porcao, preco }: Props) => {
                   })
                 }}
               >
-                {`Adicionar ao carrinho - R$ ${preco}`}
+                {`Adicionar ao carrinho - R$ ${formatarPreco(preco)}`}
               </ButtonPrato>
             </Infos>
           </div>
