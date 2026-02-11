@@ -48,7 +48,7 @@ Integração com backend para consumo de dados de restaurantes, pratos e process
 ![Página Inicial](https://github.com/odaniloborges/efood/blob/main/src/assets/screenshots/home.png)
 
 ### Catálogo de Restaurantes
-![Catálogo](https://github.com/odaniloborges/efood/blob/main/src/assets/screenshots/catalog.png
+![Catálogo](https://github.com/odaniloborges/efood/blob/main/src/assets/screenshots/catalog.png)
 
 ### Carrinho de Compras
 ![Carrinho](https://github.com/odaniloborges/efood/blob/main/src/assets/screenshots/cart.png)
