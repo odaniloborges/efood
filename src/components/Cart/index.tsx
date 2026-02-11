@@ -1,10 +1,12 @@
 import { useDispatch, useSelector } from 'react-redux'
+
 import Button from '../Button'
-import * as S from './styles'
 
 import { RootReducer } from '../../store'
 import { closeCart, remove } from '../../store/reducers/cart'
 import { openCheckout } from '../../store/reducers/checkout'
+
+import * as S from './styles'
 import { formatarPreco, getTotalPrice } from '../../utils'
 
 const Cart = () => {

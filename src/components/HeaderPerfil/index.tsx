@@ -1,10 +1,12 @@
-import * as S from './styles'
 import { useDispatch, useSelector } from 'react-redux'
+
 import { RootReducer } from '../../store'
+import { openCart } from '../../store/reducers/cart'
+
+import * as S from './styles'
 
 import logo from '../../assets/images/logo.svg'
 import imagemFundo from '../../assets/images/Vector.png'
-import { openCart } from '../../store/reducers/cart'
 
 const HeaderPerfil = () => {
   const dispatch = useDispatch()

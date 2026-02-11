@@ -1,4 +1,5 @@
 import Button from '../Button'
+
 import * as S from './styles'
 
 import estrela from '../../assets/images/estrela.png'

@@ -1,8 +1,9 @@
 import { useParams } from 'react-router-dom'
-import PratosList from '../../components/PratosList'
 
+import PratosList from '../../components/PratosList'
 import HeaderPerfil from '../../components/HeaderPerfil'
 import Banner from '../../components/Banner'
+
 import { useGetRestauranteQuery } from '../../services/api'
 
 export type Props = {

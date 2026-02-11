@@ -4,13 +4,14 @@ import * as Yup from 'yup'
 import { useFormik } from 'formik'
 import InputMask from 'react-input-mask'
 
-import { RootReducer } from '../../store'
-import { usePurchaseMutation } from '../../services/api'
-
 import Card from '../Card'
 import Button from '../Button'
+
+import { RootReducer } from '../../store'
+import { usePurchaseMutation } from '../../services/api'
 import { openCart, clearCart } from '../../store/reducers/cart'
 import { closeCheckout, closeConfirmation } from '../../store/reducers/checkout'
+
 import { formatarPreco, getTotalPrice } from '../../utils'
 
 import * as S from './styles'
