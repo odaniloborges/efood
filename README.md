@@ -57,7 +57,7 @@ Integração com backend para consumo de dados de restaurantes, pratos e process
 
 ## 🚀 Tecnologias Utilizadas
 
-- 📝 **Linguagens**: TypeScript, HTML5, CSS3, Ja
+- 📝 **Linguagens**: TypeScript, HTML5, CSS3
 - 🔧 **Tecnologias**: React, React Router DOM, Styled Components, Furmik, Yup, Redux (Gerenciamento de Estado)
 - 🛠️ **Ferramentas**: Create React App, npm, Git, ESLint, Prettier, Vercel (Deploy)
 - 📚 **Metodologias**: Component-Based Architecture, Clean Code, BEM (Block Element Modifier)
