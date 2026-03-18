@@ -151,11 +151,15 @@ export const ModalContent = styled.div`
   }
 
   @media (max-width: ${breakpoints.tablet}) {
+    padding: 8px 0;
     width: 80%;
     flex-direction: column;
 
     img {
-      margin: 12px;
+      justify-content: center;
+      width: 95%;
+      height: 95%;
+      margin: 6px;
     }
 
     h3 {
