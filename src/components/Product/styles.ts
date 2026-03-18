@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import { cores } from '../../styles'
+import { cores, breakpoints } from '../../styles'
 
 export const Card = styled(Link)`
   background-color: ${cores.branca};
@@ -12,6 +12,10 @@ export const Card = styled(Link)`
   .container {
     padding: 8px;
     border: 1px solid ${cores.vermelho};
+
+    @media (max-width: ${breakpoints.desktop}) {
+      max-width: 100%;
+    }
   }
 
   > img {
@@ -19,6 +23,10 @@ export const Card = styled(Link)`
     width: 100%;
     height: 167px;
     object-fit: cover;
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    grid-template-columns: 1fr;
   }
 `
 

@@ -1,12 +1,17 @@
 import { createGlobalStyle } from 'styled-components'
 
+export const breakpoints = {
+  desktop: '1024px',
+  tablet: '768px'
+}
+
 export const cores = {
   branca: '#fff',
   bege: '#FFF8F2',
   bege2: '#FFEBD9',
   cinza: '#333',
   vermelho: '#E66767',
-  cinzaClaro: '#A3A3A3'
+  cinzaClaro: '#EDEDED'
 }
 
 export const GlobalCss = createGlobalStyle`
@@ -28,5 +33,13 @@ export const GlobalCss = createGlobalStyle`
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
+
+    @media (max-width: ${breakpoints.desktop}) {
+      max-width: 95%;
+    }
+
+    @media (max-width: ${breakpoints.tablet}) {
+      max-width: 90%;
+    }
   }
 `

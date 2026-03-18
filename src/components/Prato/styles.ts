@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { cores } from '../../styles'
+import { cores, breakpoints } from '../../styles'
 
 export const Card = styled.div`
   background-color: ${cores.vermelho};
@@ -22,6 +22,19 @@ export const Card = styled.div`
 
   button {
     width: 100%;
+  }
+
+  @media (max-width: ${breakpoints.desktop}) {
+    width: 100%;
+
+    > img {
+      display: block;
+      width: 97%;
+      height: 217px;
+      object-fit: cover;
+      margin: 6px;
+      padding-top: 6px;
+    }
   }
 `
 
@@ -108,7 +121,6 @@ export const ModalContent = styled.div`
   padding: 16px;
   position: relative;
   display: flex;
-  flex-direction: row;
   z-index: 1;
 
   img {
@@ -132,5 +144,28 @@ export const ModalContent = styled.div`
     line-height: 22px;
     display: block;
     margin-top: 16px;
+  }
+
+  @media (max-width: ${breakpoints.desktop}) {
+    width: 90%;
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    width: 80%;
+    flex-direction: column;
+
+    img {
+      margin: 12px;
+    }
+
+    h3 {
+      margin-top: 12px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      line-height: 18px;
+      margin-top: 12px;
+    }
   }
 `

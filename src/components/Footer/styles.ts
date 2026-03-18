@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { cores } from '../../styles'
+import { cores, breakpoints } from '../../styles'
 
 export const Container = styled.footer`
   background-color: ${cores.bege2};
@@ -16,6 +16,10 @@ export const Container = styled.footer`
       max-width: 480px;
       margin-bottom: 40px;
       text-align: center;
+
+      @media (max-width: ${breakpoints.desktop}) {
+        margin-bottom: 20px;
+      }
     }
   }
 `
@@ -37,4 +41,8 @@ export const Link = styled.a`
 
 export const FooterSection = styled.div`
   margin-bottom: 64px;
+
+  @media (max-width: ${breakpoints.desktop}) {
+    margin-bottom: 32px;
+  }
 `

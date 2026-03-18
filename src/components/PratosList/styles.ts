@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 import { Props } from '.'
-import { cores } from '../../styles'
+import { cores, breakpoints } from '../../styles'
 
 export const Container = styled.section<Omit<Props, 'restaurante'>>`
   padding: 32px 0;
@@ -15,6 +15,22 @@ export const List = styled.ul`
   row-gap: 32px;
   margin-top: 40px;
   margin-bottom: 120px;
+
+  @media (max-width: ${breakpoints.desktop}) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-top: 32px;
+    margin-bottom: 60px;
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    grid-template-columns: 1fr;
+    column-gap: 16px;
+    row-gap: 16px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
 `
 
 export const Title = styled.h2`
